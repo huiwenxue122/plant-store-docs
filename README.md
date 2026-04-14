@@ -53,7 +53,7 @@ fern check
 ### Publish the docs site
 
 ```bash
-fern pages publish
+fern generate --docs
 ```
 
 Your docs will be live at `claire-x-demo.docs.buildwithfern.com`.
