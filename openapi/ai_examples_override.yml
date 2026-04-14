@@ -1,0 +1,54 @@
+paths:
+  /plant:
+    post:
+      x-fern-examples:
+        - request:
+            name: "Fern"
+            category: "Indoor"
+            tags:
+              - "green"
+              - "leafy"
+            status: "available"
+          response:
+            body:
+              id: 101
+              name: "Fern"
+              status: "available"
+              tags:
+                - "green"
+                - "leafy"
+          code-samples:
+            - language: python
+              name: Add a Plant
+              code: |
+                import requests
+
+                # API endpoint for adding a new plant
+                url = "https://api.plantstore.dev/v3/plant"
+
+                # Set headers
+                headers = {
+                    "Content-Type": "application/json"
+                }
+
+                # Prepare the plant data
+                payload = {
+                    "name": "Fern",
+                    "category": "Indoor",
+                    "tags": ["green", "leafy"],
+                    "status": "available"
+                }
+
+                response = requests.post(url, headers=headers, json=payload)
+                plant = response.json()
+                print(f"Added plant with ID: {plant['id']}")
+  /user/username:
+    get:
+      x-fern-examples:
+        - path-parameters:
+            username: username
+          response:
+            body:
+              id: 122
+              username: claire_xue
+              email: claire.xue02@plantmail.com

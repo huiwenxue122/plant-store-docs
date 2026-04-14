@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=https://schema.buildwithfern.dev/docs-yml.json
+
+instances:
+  - url: claire-x-demo.docs.buildwithfern.com
+
+title: Plant Store | Documentation
+
+announcement:
+  message: "Welcome to the Fern take home docs assignment →"
+
+
+navbar-links:
+  - type: minimal
+    text: Learn More
+    url: https://buildwithfern.com/learn
+  - type: outlined
+    text: Plants
+    url: /api-reference
+  - type: primary
+    text: About Us
+    url: https://buildwithfern.com/about
+
+layout:
+  searchbar-placement: header
+  page-width: full
+  tabs-placement: header
+
+
+settings:
+  dark-mode-code: true
+  http-snippets: true
+
+tabs:
+  home:
+    display-name: Home
+    skip-slug: true
+  api-reference:
+    display-name: API Reference
+  instructions:
+    display-name: Instructions
+
+navigation:
+  - tab: home
+    layout:
+      - page: Home
+        path: docs/pages/landingpage.mdx
+  - tab: api-reference
+    layout:
+      - api: API Reference
+  - tab: instructions
+    layout:
+      - page: Instructions
+        path: docs/pages/instructions.mdx
+  
+colors:
+  accentPrimary:
+    dark: "#FFFFFF"
+    light: "#000000"
+  background:
+    light: "#FFFFFF"
+
+page-actions:
+  options: 
+    chatgpt: true
+    claude: true
+    cursor: true
+  
+css: 
+  - docs/assets/main.css
+
+typography:
+  bodyFont:
+    name: clarkson
+    paths: 
+      - path: docs/assets/fonts/clarkson-300.woff2
+        weight: 300
+        style: normal
+      - path: docs/assets/fonts/clarkson-400.woff2
+        weight: 400
+        style: normal
+      - path: docs/assets/fonts/clarkson-500.woff2
+        weight: 600
+        style: normal
+
+logo:
+  dark: docs/assets/logo-dark.svg
+  light: docs/assets/logo-light.svg
+  height: 20
+  href: /
+
+favicon: docs/assets/favicon.svg

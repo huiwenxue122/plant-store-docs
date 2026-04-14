@@ -1,0 +1,4 @@
+api: 
+  specs: 
+    - openapi: openapi/api.yml
+      overrides: openapi/ai_examples_override.yml
