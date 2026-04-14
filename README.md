@@ -1,6 +1,6 @@
 # Plant Store API Documentation
 
-Welcome to the Plant Store API documentation repository. This repo powers our developer docs site at [claire-xu-demo.docs.buildwithfern.com](https://claire-xu-demo.docs.buildwithfern.com), built with [Fern](https://buildwithfern.com).
+Welcome to the Plant Store API documentation repository. This repo powers our developer docs site at [claire-x-demo.docs.buildwithfern.com](https://claire-x-demo.docs.buildwithfern.com), built with [Fern](https://buildwithfern.com).
 
 ## Overview
 
