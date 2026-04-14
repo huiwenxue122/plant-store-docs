@@ -14,7 +14,6 @@ The Plant Store API lets you manage plants, orders, and users, and subscribe to 
 ## Repository Structure
 
 ```
-fern/
 ├── docs.yml                  # Docs site configuration (layout, navigation, colors)
 ├── fern.config.json          # Organization name and Fern CLI version
 ├── docs/
