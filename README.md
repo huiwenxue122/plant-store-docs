@@ -56,7 +56,7 @@ fern check
 fern pages publish
 ```
 
-Your docs will be live at `claire-xu-demo.docs.buildwithfern.com`.
+Your docs will be live at `claire-x-demo.docs.buildwithfern.com`.
 
 ## Making Changes
 
